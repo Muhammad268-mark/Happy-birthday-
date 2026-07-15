@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎂 Happy Birthday Muja Roshi Khan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="app-wrapper">
+        <div class="glass-card">
+            <div class="hero-emoji">🎉</div>
+            <h1 class="main-title">Happy Birthday</h1>
+            <div class="sub-name">
+                <span>✨</span> Muja Roshi Khan <span>✨</span>
+            </div>
+            <p class="message-text">
+                🥳 Wishing you a day filled with <strong>joy</strong>, <strong>love</strong>,
+                and <strong>magical moments</strong>! <br />
+                May your year be as bright as your smile. 💫
+            </p>
+
+            <div class="age-grid">
+                <div class="age-box">
+                    <span class="num" id="yearsDisplay">0</span>
+                    <span class="lbl">Years</span>
+                </div>
+                <div class="age-box">
+                    <span class="num" id="monthsDisplay">0</span>
+                    <span class="lbl">Months</span>
+                </div>
+                <div class="age-box">
+                    <span class="num" id="daysDisplay">0</span>
+                    <span class="lbl">Days</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card cake-section">
+            <h3 class="section-title">🎂 Make a Wish!</h3>
+
+            <div class="cake-container">
+                <div class="candles-row" id="candlesRow"></div>
+
+                <div class="cake-body">
+                    <div class="cake-tier tier-3"><div class="sprinkles"></div></div>
+                    <div class="cake-tier tier-2"><div class="sprinkles"></div></div>
+                    <div class="cake-tier tier-1"><div class="sprinkles"></div></div>
+                </div>
+            </div>
+
+            <div class="cake-actions">
+                <button class="btn" id="blowBtn">💨 Blow Candles</button>
+                <button class="btn btn-secondary" id="relightBtn">🕯️ Relight</button>
+            </div>
+            <div class="blow-status" id="blowStatus">🎵 Make a wish and blow!</div>
+        </div>
+
+        <div class="glass-card wish-section">
+            <div class="music-section">
+                <button class="music-btn" id="musicToggle">🔇 Play Birthday Song</button>
+            </div>
+
+            <div style="margin: 16px 0 8px;">
+                <h3 class="wish-title">💬 Leave a wish for Muja Roshi Khan</h3>
+                <div class="wish-input-group">
+                    <input type="text" id="wishInput" placeholder="Your wish..." maxlength="60" />
+                    <button class="btn" id="wishBtn">💫 Send</button>
+                </div>
+            </div>
+
+            <div class="wish-wall" id="wishWall">
+                <span class="empty-wish">✨ Wishes will appear here ✨</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
